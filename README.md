@@ -24,7 +24,7 @@ The objective of this project was to inspect Cyber Skyline's SSL/TLS certificate
 
 The Cyber Skyline SSL challenge asked three questions: identify the issuer of Cyber Skyline's SSL certificate, determine the SSL key length, and count the certificates in the certificate chain.
 
-![Cyber Skyline SSL Challenge](images/challenge.png)
+![Cyber Skyline SSL Challenge](CTF.png)
 
 *Ref 1: Cyber Skyline SSL challenge showing the three certificate questions.*
 
@@ -34,7 +34,7 @@ The certificate for `*.cyberskyline.com` was opened in Chrome's Certificate View
 
 **Answer:** Sectigo Public Server Authentication CA DV R36
 
-![Certificate Issuer](images/issuer.png)
+![Certificate Issuer](general.png)
 
 *Ref 2: Chrome Certificate Viewer showing Sectigo Public Server Authentication CA DV R36 as the issuer.*
 
@@ -44,7 +44,7 @@ The **Details** tab was opened and **Subject Public Key Info** was inspected. Un
 
 **Answer:** 2048 bits
 
-![Public Key Length](images/key-length.png)
+![Public Key Length](bits.png)
 
 *Ref 3: Certificate details showing a 2048-bit modulus for the public key.*
 
@@ -60,7 +60,7 @@ The output displayed three server-provided certificates in the **Certificate cha
 
 **Answer:** 3 certificates
 
-![OpenSSL Certificate Chain](images/certificate-chain.png)
+![OpenSSL Certificate Chain](terminal.png)
 
 *Ref 4: OpenSSL output used to inspect the Cyber Skyline certificate chain.*
 
